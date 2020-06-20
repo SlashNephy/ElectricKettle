@@ -22,10 +22,9 @@
  * SOFTWARE.
  */
 
-package blue.starry.kettle
+package blue.starry.kettle.app
 
 import electron.BrowserWindow
-import electron.Menu
 import electron.app
 import node.dirname
 import node.process
@@ -35,6 +34,10 @@ import kotlin.js.json
 var mainWindow: dynamic = null
 
 fun main() {
+    if (!app.requestSingleInstanceLock()) {
+        app.quit()
+    }
+
     // This method will be called when Electron has finished
     // initialization and is ready to create browser windows.
     // Some APIs can only be used after this event occurs.
@@ -59,18 +62,20 @@ fun main() {
 
 private fun createMainWindow() {
     mainWindow = BrowserWindow {
-        "width" set 800
-        "height" set 600
+        "title" set "ElectricKettle"
+        "width" set 1200
+        "height" set 800
         "webPreferences" set json(
+            // may cause security issues
             "nodeIntegration" to true,
-            "enableRemoteModule" to false
+            "enableRemoteModule" to true
         )
     }
 
     mainWindow.loadURL("file://$dirname/index.html")
 
     // Hide menu bar
-    Menu.setApplicationMenu(null)
+    // Menu.setApplicationMenu(null)
 
     mainWindow.on("unresponsive") {
         window.alert("Browser seems to crash.")

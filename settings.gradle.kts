@@ -22,3 +22,9 @@ pluginManagement {
         }
     }
 }
+
+include(":app")
+project(":app").projectDir = File("modules/app")
+
+include(":front")
+project(":front").projectDir = File("modules/front")
