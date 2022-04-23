@@ -63,7 +63,7 @@ kotlin {
         main {
             dependencies {
                 implementation(kotlin("stdlib-js"))
-                implementation("org.jetbrains.kotlinx:kotlinx-html-js:0.7.1")
+                implementation("org.jetbrains.kotlinx:kotlinx-html-js:0.7.5")
 
                 // React
                 implementation("org.jetbrains:kotlin-react:16.13.0-pre.94-kotlin-1.3.70")
