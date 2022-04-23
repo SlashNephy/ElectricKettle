@@ -67,7 +67,7 @@ kotlin {
 
                 // React
                 implementation("org.jetbrains:kotlin-react:16.13.0-pre.94-kotlin-1.3.70")
-                implementation("org.jetbrains:kotlin-react-dom:16.13.0-pre.94-kotlin-1.3.70")
+                implementation("org.jetbrains:kotlin-react-dom:16.14.0-pre.125-kotlin-1.4.10")
                 implementation(npm("react", "16.13.1"))
                 implementation(npm("react-dom", "16.13.1"))
 
