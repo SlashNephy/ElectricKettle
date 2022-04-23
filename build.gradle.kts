@@ -8,7 +8,7 @@ plugins {
 
     // For testing
     id("build-time-tracker") version "0.11.1"
-    id("com.adarshr.test-logger") version "2.0.0"
+    id("com.adarshr.test-logger") version "2.1.1"
 }
 
 subprojects {
