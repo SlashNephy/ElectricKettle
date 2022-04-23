@@ -4,7 +4,7 @@ group = "blue.starry"
 version = "0.0.1"
 
 plugins {
-    kotlin("js") version "1.3.72" apply false
+    kotlin("js") version "1.6.21" apply false
 
     // For testing
     id("build-time-tracker") version "0.11.1"
