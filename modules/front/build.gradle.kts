@@ -78,7 +78,7 @@ kotlin {
                 implementation(npm("react-player"))
                 implementation(npm("react-share"))
 
-                implementation("blue.starry:penicillin-js:5.0.1-eap-4")
+                implementation("blue.starry:penicillin-js:6.2.2")
                 runtimeOnly(npm("crypto-js"))
                 runtimeOnly(npm("text-encoding"))
                 runtimeOnly(npm("bufferutil"))
