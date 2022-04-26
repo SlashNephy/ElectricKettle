@@ -85,7 +85,7 @@ kotlin {
                 runtimeOnly(npm("utf-8-validate"))
                 runtimeOnly(npm("abort-controller"))
                 runtimeOnly(npm("fs"))
-                implementation("io.github.microutils:kotlin-logging-js:1.7.9")
+                implementation("io.github.microutils:kotlin-logging-js:2.1.21")
             }
         }
 
